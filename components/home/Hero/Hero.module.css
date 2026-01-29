@@ -1,6 +1,5 @@
 .hero {
   padding: 5rem 0;
-  text-align: center;
 }
 
 .container {
@@ -9,7 +8,7 @@
   padding: 0 var(--spacing-xl);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .imageWrapper {

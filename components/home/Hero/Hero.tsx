@@ -7,7 +7,7 @@ export default function Hero() {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/profile.svg"
+            src="/images/profile.jpg"
             alt="Annabelle Conron"
             width={200}
             height={200}

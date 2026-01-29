@@ -7,7 +7,7 @@ export default function BioSection() {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/profile.svg"
+            src="/images/profile.jpg"
             alt="Annabelle Conron"
             width={300}
             height={300}
