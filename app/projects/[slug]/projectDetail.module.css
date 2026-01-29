@@ -1,0 +1,22 @@
+.page {
+  padding: var(--spacing-3xl) 0 var(--spacing-4xl);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.coverWrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: var(--spacing-2xl);
+  background: var(--color-gray-100);
+}
+
+.coverImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}

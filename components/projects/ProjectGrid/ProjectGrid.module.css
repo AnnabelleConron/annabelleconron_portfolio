@@ -1,0 +1,18 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.empty {
+  text-align: center;
+  color: var(--color-gray-500);
+  padding: var(--spacing-3xl) 0;
+  font-size: var(--text-lg);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
