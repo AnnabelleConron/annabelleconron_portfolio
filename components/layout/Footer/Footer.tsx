@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.contact}>
-          <h3 className={styles.heading}>Get in Touch</h3>
-          <p className={styles.email}>hello@annabelleconron.com</p>
+          <h3 className={styles.heading}>Interested in connecting?</h3>
+          <p className={styles.email}>annabelle.conron@outlook.com</p>
         </div>
 
         <nav className={styles.nav}>

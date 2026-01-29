@@ -34,7 +34,7 @@ export default function Nav() {
     <nav className={styles.nav}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          AC
+          ANNABELLE CONRON
         </Link>
 
         <ul className={styles.desktopLinks}>

@@ -22,7 +22,7 @@ export default function ProjectsPageClient({
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <h1 className={styles.heading}>Projects</h1>
+        <h1 className={styles.heading}>My Projects</h1>
         <ProjectFilter
           subjects={subjects}
           selected={selectedSubject}

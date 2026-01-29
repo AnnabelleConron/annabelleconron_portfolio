@@ -1,5 +1,5 @@
 .hero {
-  padding: var(--spacing-4xl) 0;
+  padding: 5rem 0;
   text-align: center;
 }
 
@@ -27,14 +27,10 @@
 }
 
 .name {
-  font-size: var(--text-5xl);
-  margin-bottom: var(--spacing-sm);
-}
-
-.tagline {
-  font-size: var(--text-xl);
-  color: var(--color-gray-500);
+  font-size: 2.75rem;
   margin-bottom: var(--spacing-xl);
+  max-width: 800px;
+  line-height: 1.2;
 }
 
 .social {
@@ -61,7 +57,10 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: var(--spacing-2xl) 0;
+    padding: 3rem 0;
+  }
+  .name {
+    font-size: 2rem;
   }
   .imageWrapper {
     width: 150px;
