@@ -6,21 +6,19 @@ subject: "Programming Interactions"
 coverImage: "/images/projects/memory-match/cover.png"
 featured: true
 galleryImages:
-  - "/images/projects/memory-match/mockup_desktop.png"
   - "/images/projects/memory-match/mockup_tablet.png"
   - "/images/projects/memory-match/mockup_mobile.png"
   - "/images/projects/memory-match/screenshot_03.png"
-  - "/images/projects/memory-match/screenshot_06.png"
   - "/images/projects/memory-match/screenshot_07.png"
+  - "/images/projects/memory-match/screenshot_06.png"
   - "/images/projects/memory-match/screenshot_08.png"
 ---
 
-## Hero
+## Abstract
 
 Memory Match is a browser-based card game that explores how real-time API integration transforms traditional memory mechanics into procedurally generated experiences. Built with vanilla JavaScript, the application fetches animal imagery from Dog CEO and RandomFox APIs to create unique card decks per session, eliminating static content limitations. The interface supports multimodal interaction through keyboard and mouse input, implements responsive design for cross-device compatibility, and persists player performance via browser local storage.
 
 **Live Demo:** [Link to deployed application]
-**Gameplay Video:** [Reference to cover.png or gameplay demonstration]
 
 ## Challenge
 
@@ -135,6 +133,8 @@ CSS Grid provides a 4-column layout on desktop, automatically collapsing to 2 co
 **Animation Choreography**
 
 Card flips use CSS 3D transforms (`rotateY(180deg)`) with hardware acceleration, achieving smooth 60fps transitions. A 0.6-second duration balances perceived responsiveness with readability of revealed imagery. Staggered delays on bulk operations (board initialization, reset) create visual rhythm rather than abrupt state changes.
+
+![Mockup](/images/projects/memory-match/mockup_desktop.png)
 
 #### Theme System Architecture
 
