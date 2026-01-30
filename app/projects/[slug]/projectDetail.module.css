@@ -9,7 +9,6 @@
 }
 
 .coverWrapper {
-  border-radius: 8px;
   overflow: hidden;
   margin-bottom: var(--spacing-2xl);
   background: var(--color-gray-100);

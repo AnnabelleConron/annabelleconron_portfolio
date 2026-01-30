@@ -6,8 +6,6 @@ subject: "Data Visualisation"
 coverImage: "/images/projects/galactic-guide/cover.png"
 featured: true
 galleryImages:
-  - "/images/projects/galactic-guide/visualisation.png"
-  - "/images/projects/galactic-guide/flowchart.svg"
 ---
 
 ## Abstract
@@ -15,6 +13,8 @@ galleryImages:
 The Galactic Visitor's Guide to America is a speculative data visualization that reframes UFO sighting records as an extraterrestrial tourism guide. By analyzing 60,000+ reports from the National UFO Reporting Center (NUFORC) alongside contextual state-level data—climate, political composition, crime statistics, cultural infrastructure—the project interrogates how environmental and social factors correlate with reported anomalous phenomena.
 
 Rather than attempting to prove or disprove extraterrestrial activity, the work employs speculative design to expose how human perception, cultural context, and reporting bias shape the patterns we find in ambiguous data. The outcome is a critical reflection on data interpretation itself: how meaning emerges from incomplete information, and how analytical framing determines the stories data can tell.
+
+![Data Visualisation](/images/projects/galactic-guide/visualisation.png)
 
 ## Research Question
 
@@ -49,13 +49,13 @@ State-level indicators were collected from government databases, research reposi
 UFO shape descriptors in NUFORC data were grouped into six fictional "species" based on reported craft morphology:
 
 | Species | Description | Shape Categories |
-|---------|-------------|------------------|
-| **Circulons** | Disc/circular craft | Circle, disc, round |
-| **Cylithers** | Cylindrical vessels | Cylinder, cigar, tube |
-| **Luminari** | Light phenomena | Light, orb, sphere, fireball |
-| **Ellipsoids** | Oval craft | Oval, egg, teardrop |
-| **Orthogonals** | Angular vessels | Triangle, rectangle, box |
-| **Diamandrix** | Diamond formations | Diamond, chevron, boomerang |
+|:--------|:------------|:-----------------|
+| Circulons | Disc/circular craft | Circle, disc, round |
+| Cylithers | Cylindrical vessels | Cylinder, cigar, tube |
+| Luminari | Light phenomena | Light, orb, sphere, fireball |
+| Ellipsoids | Oval craft | Oval, egg, teardrop |
+| Orthogonals | Angular vessels | Triangle, rectangle, box |
+| Diamandrix | Diamond formations | Diamond, chevron, boomerang |
 
 This taxonomy serves dual purposes: it provides an analytical structure for grouping heterogeneous reports, while the playful nomenclature signals the speculative nature of the framing.
 

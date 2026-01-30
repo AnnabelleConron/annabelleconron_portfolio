@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
 import { Project, ProjectFrontmatter } from './types';
 
 const projectsDirectory = path.join(process.cwd(), 'content/projects');
@@ -20,7 +21,7 @@ export function getProjectBySlug(slug: string): Project {
 }
 
 export async function getProjectHtml(content: string): Promise<string> {
-  const result = await remark().use(html).process(content);
+  const result = await remark().use(remarkGfm).use(html).process(content);
   return result.toString();
 }
 
