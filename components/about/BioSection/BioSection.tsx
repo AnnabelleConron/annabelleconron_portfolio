@@ -17,14 +17,15 @@ export default function BioSection() {
         <div className={styles.content}>
           <h1 className={styles.heading}>About Me</h1>
           <p className={styles.text}>
-            I&apos;m Annabelle Conron, a designer and creative thinker passionate about
-            crafting meaningful experiences. With a background in design and a love
-            for problem-solving, I bring ideas to life through thoughtful research,
-            visual storytelling, and user-centered design.
+            I&apos;m Annabelle Conron, I create digital experiences that bridge complex information
+            and meaningful interaction. Whether I'm designing interfaces, building browser-based games,
+            or transforming datasets into visual narratives, I'm driven by curiosity about how people
+            engage with technology.
           </p>
           <p className={styles.text}>
-            My work spans branding, digital design, and creative strategy. I believe
-            great design starts with understanding people and ends with delighting them.
+            Currently focused on UX/UI design, data visualization, and creative coding. Always exploring
+            new ways to make information accessible and interactions delightful. Open to opportunities 
+            in UX/UI design and interaction design.
           </p>
         </div>
       </div>

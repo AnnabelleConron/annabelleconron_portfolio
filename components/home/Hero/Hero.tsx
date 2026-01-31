@@ -15,7 +15,7 @@ export default function Hero() {
             priority
           />
         </div>
-        <h1 className={styles.name}>I&apos;m Annabelle Conron, a UX/UI designer specialising in creating sleek, user-friendly mobile apps.</h1>
+        <h1 className={styles.name}>I&apos;m Annabelle Conron, a UX/UI designer translating data into meaningful interactions</h1>
         <div className={styles.social}>
           <a
             href="https://instagram.com"

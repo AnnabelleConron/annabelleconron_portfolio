@@ -3,17 +3,17 @@ import styles from './ProjectHeader.module.css';
 
 interface ProjectHeaderProps {
   title: string;
-  subtitle?: string;
+  description?: string;
 }
 
-export default function ProjectHeader({ title, subtitle }: ProjectHeaderProps) {
+export default function ProjectHeader({ title, description }: ProjectHeaderProps) {
   return (
     <header className={styles.header}>
       <Link href="/projects/" className={styles.back}>
         &larr; Back to Projects
       </Link>
       <h1 className={styles.title}>{title}</h1>
-      {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+      {description && <p className={styles.description}>{description}</p>}
     </header>
   );
 }

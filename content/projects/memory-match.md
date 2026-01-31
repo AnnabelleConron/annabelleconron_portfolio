@@ -1,10 +1,10 @@
 ---
 title: "Memory Match"
-subtitle: "Creative Coding"
+description: "Memory Match is a browser-based card game that explores how real-time API integration transforms traditional memory mechanics into procedurally generated experiences."
 date: "2024-03-10"
 subject: "Programming Interactions"
 coverImage: "/images/projects/memory-match/cover.png"
-featured: true
+featured: false
 galleryImages:
   - "/images/projects/memory-match/mockup_tablet.png"
   - "/images/projects/memory-match/mockup_mobile.png"
@@ -16,9 +16,9 @@ galleryImages:
 
 ## Abstract
 
-Memory Match is a browser-based card game that explores how real-time API integration transforms traditional memory mechanics into procedurally generated experiences. Built with vanilla JavaScript, the application fetches animal imagery from Dog CEO and RandomFox APIs to create unique card decks per session, eliminating static content limitations. The interface supports multimodal interaction through keyboard and mouse input, implements responsive design for cross-device compatibility, and persists player performance via browser local storage.
+Memory Match is built with vanilla JavaScript, the application fetches animal imagery from Dog CEO and RandomFox APIs to create unique card decks per session, eliminating static content limitations. The interface supports multimodal interaction through keyboard and mouse input, implements responsive design for cross-device compatibility, and persists player performance via browser local storage.
 
-**Live Demo:** [Link to deployed application]
+[Link to Memory Match](https://annabelleconron.github.io/memory-match-game/)
 
 ## Challenge
 

@@ -1,6 +1,6 @@
 export interface ProjectFrontmatter {
   title: string;
-  subtitle?: string;
+  description?: string;
   date: string;
   subject: string;
   coverImage: string;

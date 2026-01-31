@@ -19,7 +19,7 @@
   margin-bottom: var(--spacing-sm);
 }
 
-.subtitle {
+.description {
   font-size: var(--text-xl);
   color: var(--color-gray-500);
 }

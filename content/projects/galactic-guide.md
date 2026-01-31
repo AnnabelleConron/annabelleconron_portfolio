@@ -1,6 +1,6 @@
 ---
 title: "Galactic Visitor's Guide to America"
-subtitle: "The Galactic Visitor's Guide to America does not ask whether UFOs exist. Instead, it asks: what do our reports of them—where we see them, how we describe them, when we choose to report them—reveal about the cultural, environmental, and psychological contexts that shape human perception? By adopting a speculative alien perspective, the visualization creates critical distance that allows viewers to see familiar data, and their own interpretive impulses, with fresh eyes."
+description: "The Galactic Visitor's Guide to America does not ask whether UFOs exist. Instead, it asks: what do our reports of them—where we see them, how we describe them, when we choose to report them—reveal about the cultural, environmental, and psychological contexts that shape human perception? By adopting a speculative alien perspective, the visualization creates critical distance that allows viewers to see familiar data, and their own interpretive impulses, with fresh eyes."
 date: "2024-01-15"
 subject: "Data Visualisation"
 coverImage: "/images/projects/galactic-guide/cover.png"

@@ -27,25 +27,28 @@ export function generateMetadata({ params }: ProjectPageProps) {
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const project = getProjectBySlug(params.slug);
   const contentHtml = await getProjectHtml(project.content);
+  const hasVideo = project.content.includes('<video');
 
   return (
     <div className={styles.page}>
       <div className={styles.container}>
         <ProjectHeader
           title={project.frontmatter.title}
-          subtitle={project.frontmatter.subtitle}
+          description={project.frontmatter.description}
         />
 
-        <div className={styles.coverWrapper}>
-          <Image
-            src={project.frontmatter.coverImage}
-            alt={project.frontmatter.title}
-            width={1200}
-            height={800}
-            className={styles.coverImage}
-            priority
-          />
-        </div>
+        {!hasVideo && (
+          <div className={styles.coverWrapper}>
+            <Image
+              src={project.frontmatter.coverImage}
+              alt={project.frontmatter.title}
+              width={1200}
+              height={800}
+              className={styles.coverImage}
+              priority
+            />
+          </div>
+        )}
 
         <div
           className="markdown-content"
