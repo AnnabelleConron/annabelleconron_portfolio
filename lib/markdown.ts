@@ -23,6 +23,8 @@ export function getProjectBySlug(slug: string): Project {
   };
 }
 
+const basePath = process.env.NODE_ENV === 'production' ? '/annabelleconron_portfolio' : '';
+
 export async function getProjectHtml(content: string): Promise<string> {
   const result = await unified()
     .use(remarkParse)
@@ -31,7 +33,11 @@ export async function getProjectHtml(content: string): Promise<string> {
     .use(rehypeRaw)
     .use(rehypeStringify)
     .process(content);
-  return result.toString();
+  let html = result.toString();
+  if (basePath) {
+    html = html.replace(/(src|href)="\/(?!\/)/g, `$1="${basePath}/`);
+  }
+  return html;
 }
 
 export function getAllProjects(): Project[] {

@@ -18,8 +18,8 @@ export default function BioSection() {
           <h1 className={styles.heading}>About Me</h1>
           <p className={styles.text}>
             I&apos;m Annabelle Conron, I create digital experiences that bridge complex information
-            and meaningful interaction. Whether I'm designing interfaces, building browser-based games,
-            or transforming datasets into visual narratives, I'm driven by curiosity about how people
+            and meaningful interaction. Whether I&apos;m designing interfaces, building browser-based games,
+            or transforming datasets into visual narratives, I&apos;m driven by curiosity about how people
             engage with technology.
           </p>
           <p className={styles.text}>
