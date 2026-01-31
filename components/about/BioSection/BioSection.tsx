@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { basePath } from '@/lib/config';
 import styles from './BioSection.module.css';
 
 export default function BioSection() {
@@ -7,7 +8,7 @@ export default function BioSection() {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/profile.jpg"
+            src={`${basePath}/images/profile.jpg`}
             alt="Annabelle Conron"
             width={300}
             height={300}

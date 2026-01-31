@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ProjectFrontmatter } from '@/lib/types';
+import { basePath } from '@/lib/config';
 import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
@@ -13,7 +14,7 @@ export default function ProjectCard({ slug, frontmatter }: ProjectCardProps) {
     <Link href={`/projects/${slug}/`} className={styles.card}>
       <div className={styles.imageWrapper}>
         <Image
-          src={frontmatter.coverImage}
+          src={`${basePath}${frontmatter.coverImage}`}
           alt={frontmatter.title}
           width={600}
           height={400}

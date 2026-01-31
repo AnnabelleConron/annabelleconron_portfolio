@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { getAllProjects, getProjectBySlug, getProjectHtml } from '@/lib/markdown';
+import { basePath } from '@/lib/config';
 import ProjectHeader from '@/components/projects/ProjectHeader/ProjectHeader';
 import ImageGallery from '@/components/projects/ImageGallery/ImageGallery';
 import PrototypeEmbed from '@/components/projects/PrototypeEmbed/PrototypeEmbed';
@@ -40,7 +41,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         {!hasVideo && (
           <div className={styles.coverWrapper}>
             <Image
-              src={project.frontmatter.coverImage}
+              src={`${basePath}${project.frontmatter.coverImage}`}
               alt={project.frontmatter.title}
               width={1200}
               height={800}

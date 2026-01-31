@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { basePath } from '@/lib/config';
 import styles from './ImageGallery.module.css';
 
 interface ImageGalleryProps {
@@ -14,7 +15,7 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
       {images.map((src, index) => (
         <div key={index} className={styles.imageWrapper}>
           <Image
-            src={src}
+            src={`${basePath}${src}`}
             alt={`${alt} - Image ${index + 1}`}
             width={800}
             height={533}

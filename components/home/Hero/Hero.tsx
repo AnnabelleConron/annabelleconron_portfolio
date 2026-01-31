@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { basePath } from '@/lib/config';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -7,7 +8,7 @@ export default function Hero() {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/profile.jpg"
+            src={`${basePath}/images/profile.jpg`}
             alt="Annabelle Conron"
             width={200}
             height={200}

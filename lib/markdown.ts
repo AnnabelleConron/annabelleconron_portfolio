@@ -23,7 +23,7 @@ export function getProjectBySlug(slug: string): Project {
   };
 }
 
-const basePath = process.env.NODE_ENV === 'production' ? '/annabelleconron_portfolio' : '';
+import { basePath } from './config';
 
 export async function getProjectHtml(content: string): Promise<string> {
   const result = await unified()
