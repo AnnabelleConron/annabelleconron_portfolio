@@ -6,7 +6,6 @@ subject: "User Experience"
 coverImage: "/images/projects/ubs-mobile/mockup-phone.png"
 featured: true
 galleryImages:
-  - "/images/projects/ubs-mobile/home-screen.svg"
   - "/images/projects/ubs-mobile/plan-mode.png"
   - "/images/projects/ubs-mobile/insight-hub.png"
   # - "/images/projects/ubs-mobile/insight-hub-1.png"
@@ -86,6 +85,8 @@ Banking apps assume a single user state: "I need to accomplish a task." But UBS 
 Our hypothesis: Explicitly separating these modes would reduce anxiety for low-literacy users while preserving efficiency for experts.
 
 ## Solution: Act/Plan Dual-Mode Interface
+
+![Act/Plan Dual-Mode Interface](/images/projects/ubs-mobile/home-screen.svg)
 
 ### Strategic Decision: Make Mode-Switching Explicit
 
