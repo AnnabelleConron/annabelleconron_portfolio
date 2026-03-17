@@ -6,14 +6,14 @@ subject: "User Experience"
 coverImage: "/images/projects/ubs-mobile/mockup-phone.png"
 featured: true
 galleryImages:
-  - "/images/projects/ubs-mobile/plan-mode.png"
-  - "/images/projects/ubs-mobile/insight-hub.png"
+  # - "/images/projects/ubs-mobile/plan-mode.png"
+  # - "/images/projects/ubs-mobile/insight-hub.png"
   # - "/images/projects/ubs-mobile/insight-hub-1.png"
   # - "/images/projects/ubs-mobile/insight-hub-2.png"
-  - "/images/projects/ubs-mobile/saving-goal.png"
+  # - "/images/projects/ubs-mobile/saving-goal.png"
   # - "/images/projects/ubs-mobile/new-saving-goal.png"
   # - "/images/projects/ubs-mobile/transfert-goal.png"
-  - "/images/projects/ubs-mobile/product.png"
+  # - "/images/projects/ubs-mobile/product.png"
   # - "/images/projects/ubs-mobile/product-1.png"
   # - "/images/projects/ubs-mobile/product-2.png"
 ---
@@ -117,7 +117,7 @@ Plan Mode introduces three modules accessible from a gradient-background home sc
 
 <!-- ![Plan Mode home screen showing all three modules](/images/projects/ubs-mobile/plan-mode.png) -->
 
-#### 1. Insight Hub: Personalized Financial Guidance
+#### 1. Insight Hub: Personalised Financial Guidance
 
 The challenge: Users with low literacy need scaffolding; users with high literacy find scaffolding patronizing.
 
@@ -130,6 +130,8 @@ Results place users into profiles like "Guided Path-builder" or "Self-directed E
 
 The Insight Hub also displays spending analytics and transaction forecasts, but we deliberately avoided prescriptive recommendations ("You should save more"). Instead, visualizations surface patterns and let users draw conclusions.
 
+![UBS Insight Hub](/images/projects/ubs-mobile/ubs_insight_hub.png)
+
 #### 2. Saving Goals: Making Progress Tangible
 
 Abstract financial planning fails because "save more" isn't actionable. We transformed this into concrete, visual goals.
@@ -140,6 +142,8 @@ Users create goals (Taiwan Trip: CHF 28,000, Home Deposit: CHF 120,000) represen
 - **Linked savings account** showing accumulated funds
 
 **Key interaction decision:** Rather than auto-transferring funds (which creates anxiety about overdrafts), we made transfers one-tap but explicit. Users maintain control while friction is minimized.
+
+![UBS Saving Goals](/images/projects/ubs-mobile/ubs_saving_goal.png)
 
 #### 3. Product Pathway: Demystifying Financial Products
 
@@ -156,6 +160,8 @@ Each pathway uses plain language and breaks exploration into micro-steps:
 3. "Open account" (commitment)
 
 Educational content uses illustrated cards with approachable iconography. Users can exit at any point without commitment.
+
+![UBS Product Pathway](/images/projects/ubs-mobile/ubs_smart_save.png)
 
 ## Design System
 
