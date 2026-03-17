@@ -198,7 +198,7 @@ With these changes, task completion rates improved:
 
 **Remaining concern from testing:** One user with high financial literacy expressed frustration that comparing multiple products required exiting and re-entering flows. This is a known limitation we accepted to maintain simplicity for primary users.
 
-<!-- ## Outcome & Reflection
+## Outcome & Reflection
 
 ### What This Solution Achieves
 
@@ -208,7 +208,7 @@ For **Laid-Back Professionals**, Act Mode offers efficient task completion witho
 
 For **UBS**, the separation makes planning features discoverable without disrupting transactional efficiency. The behavioral profiling enables personalized product recommendations without feeling invasive.
 
-### Limitations & Next Steps
+<!--  ### Limitations & Next Steps
 
 **What we couldn't validate:** Whether explicit mode-switching becomes friction over time. Longitudinal testing would reveal if users develop preference for one mode or if toggling becomes habitual.
 
