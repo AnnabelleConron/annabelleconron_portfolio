@@ -192,7 +192,7 @@ With these changes, task completion rates improved:
 
 **Remaining concern from testing:** One user with high financial literacy expressed frustration that comparing multiple products required exiting and re-entering flows. This is a known limitation we accepted to maintain simplicity for primary users.
 
-## Outcome & Reflection
+<!-- ## Outcome & Reflection
 
 ### What This Solution Achieves
 
@@ -222,10 +222,9 @@ For **UBS**, the separation makes planning features discoverable without disrupt
 
 **What I'd do differently:** I would prototype the toggle switch much earlier. We spent 3 weeks designing Plan Mode features before testing whether users understood mode separation. This was backward—validate the core concept before elaborating features.
 
----
 
 **Design & Prototyping:** Figma (full design system + interactive prototype)
 **Research:** User interviews (remote), competitive analysis, iterative testing
 **Team:** 5 designers, collaboration with UBS product team
 
-*This project was completed under academic NDA with UBS Switzerland.*
+*This project was completed under academic NDA with UBS Switzerland.* -->
