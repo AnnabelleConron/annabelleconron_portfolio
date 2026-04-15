@@ -4,7 +4,7 @@ description: "The Galactic Visitor's Guide to America does not ask whether UFOs 
 date: "2024-01-15"
 subject: "Data Visualisation"
 coverImage: "/images/projects/galactic-guide/cover.png"
-featured: true
+featured: false
 galleryImages:
 ---
 
