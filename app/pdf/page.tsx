@@ -46,9 +46,6 @@ export default async function PdfPage() {
 
   return (
     <div className={styles.pdfRoot}>
-      {/* ── Print header / footer (hidden on screen, fixed on every printed page) ── */}
-      <div className={styles.printPageHeader}>Portfolio | Annabelle Conron</div>
-      <div className={styles.printPageFooter}>annabelleconron.github.io/annabelleconron_portfolio</div>
       {/* ── Cover / Table of Contents ───────────────────────────── */}
       <section className={styles.coverPage}>
         <div className={styles.coverMeta}>

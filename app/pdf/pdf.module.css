@@ -181,12 +181,6 @@
   background: var(--color-gray-50);
 }
 
-/* Print page header / footer — hidden on screen */
-.printPageHeader,
-.printPageFooter {
-  display: none;
-}
-
 /* ─── Print overrides ─────────────────────────────────────────────────────── */
 
 @media print {
@@ -220,38 +214,6 @@
     max-width: 100%;
     padding: 0;
     border-bottom: none;
-  }
-
-  /* Custom header — appears at top of every printed page, in the margin area */
-  .printPageHeader {
-    display: block !important;
-    position: fixed;
-    top: 0.4cm;
-    left: 0;
-    right: 0;
-    padding: 0 2cm;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 8pt;
-    font-weight: 400;
-    color: #9ca3af;
-    text-align: left;
-    letter-spacing: 0;
-  }
-
-  /* Custom footer — portfolio URL */
-  .printPageFooter {
-    display: block !important;
-    position: fixed;
-    bottom: 0.4cm;
-    left: 0;
-    right: 0;
-    padding: 0 2cm;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 8pt;
-    font-weight: 400;
-    color: #9ca3af;
-    text-align: left;
-    letter-spacing: 0;
   }
 
   /* (img, h*, li, video rules live in pdf-global.css — element selectors not allowed in CSS Modules) */
