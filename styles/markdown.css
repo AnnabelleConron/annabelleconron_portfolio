@@ -120,18 +120,31 @@
 
 /* ─── PDF export: video placeholder ─────────────────────────────────────── */
 
-/* Screen: placeholder is invisible, video shows normally */
+/* Screen: thumbnail hidden, video plays normally */
+.video-thumbnail-placeholder {
+  display: none;
+}
+
+/* Fallback blank placeholder also hidden on screen */
 .video-print-placeholder {
   display: none;
 }
 
 @media print {
-  /* Hide video element */
+  /* Hide the video element */
   .video-wrapper video {
     display: none !important;
   }
 
-  /* Show placeholder — full 16:9 blank area sized for Acrobat video insertion */
+  /* Show thumbnail image in place of the video */
+  .video-thumbnail-placeholder {
+    display: block !important;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  /* Fallback: blank 16:9 area if no thumbnail is mapped */
   .video-print-placeholder {
     display: block !important;
     width: 100%;

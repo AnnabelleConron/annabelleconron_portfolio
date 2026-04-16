@@ -25,12 +25,44 @@ const TOC_ENTRIES = [
   { slug: 'memory-match', title: 'Memory Match', subject: 'Programming Interactions' },
 ];
 
-function injectVideoPrintPlaceholders(html: string): string {
-  return html.replace(
-    /<video[\s\S]*?<\/video>/gi,
-    (match) =>
-      `<div class="video-wrapper">${match}<div class="video-print-placeholder"></div></div>`,
-  );
+// Maps video filename → thumbnail path(s).
+// Arrays handle the same filename appearing multiple times — first occurrence
+// uses index 0, second uses index 1, etc.
+const VIDEO_THUMBNAILS: Record<string, string | string[]> = {
+  'UBSMobileApp_Video.mp4':
+    '/images/projects/ubs-mobile/UBSMobileApp_Video.png',
+  'Video-Essay-SACEBA.mp4': [
+    '/images/projects/remnants-of-absence/Exhibition-Video-Essay.png',
+    '/images/projects/remnants-of-absence/Video-Essay-SACEBA.png',
+  ],
+  'Photogrammetry-LCD-Display-at-SACEBA.mp4':
+    '/images/projects/remnants-of-absence/Photogrammetry-LCD-Display-at-SACEBA.png',
+  'Photogrammetry-Reconstruction-Result-of-Three-Scenes.mp4':
+    '/images/projects/remnants-of-absence/Photogrammetry-Reconstruction-Result-of-Three-Scenes.png',
+};
+
+function injectVideoThumbnails(html: string, bPath: string): string {
+  const seen: Record<string, number> = {};
+
+  return html.replace(/<video[\s\S]*?<\/video>/gi, (match) => {
+    const srcMatch = match.match(/<source[^>]+src="([^"]+)"[^>]*>/i);
+    const filename = srcMatch ? srcMatch[1].split('/').pop()! : '';
+
+    seen[filename] = (seen[filename] ?? 0) + 1;
+    const occurrence = seen[filename];
+
+    const entry = VIDEO_THUMBNAILS[filename];
+    const thumbnailPath = Array.isArray(entry)
+      ? entry[occurrence - 1]
+      : entry;
+
+    if (!thumbnailPath) {
+      // Unknown video — fall back to blank placeholder
+      return `<div class="video-wrapper">${match}<div class="video-print-placeholder"></div></div>`;
+    }
+
+    return `<div class="video-wrapper">${match}<img class="video-thumbnail-placeholder" src="${bPath}${thumbnailPath}" alt="Video thumbnail" /></div>`;
+  });
 }
 
 export default async function PdfPage() {
@@ -38,7 +70,7 @@ export default async function PdfPage() {
     ORDERED_SLUGS.map(async (slug) => {
       const project = getProjectBySlug(slug);
       const rawHtml = await getProjectHtml(project.content);
-      const contentHtml = injectVideoPrintPlaceholders(rawHtml);
+      const contentHtml = injectVideoThumbnails(rawHtml, basePath);
       const hasVideo = project.content.includes('<video');
       return { ...project, contentHtml, hasVideo };
     }),
