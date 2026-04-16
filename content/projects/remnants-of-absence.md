@@ -14,10 +14,10 @@ galleryImages:
   <a href="https://github.com/AnnabelleConron/ghost_instrument_wifi_api.git">GitHub repository</a> | <a href="https://drive.google.com/drive/folders/1-DXKpukIvsdbvtxX6xGcnFNV74aqKfuE?usp=sharing">Assets</a>
 </p>
 
-<!-- <video controls playsinline style="width: 100%; margin: 2rem 0 0.5rem; display: block;">
-  <source src="/videos/projects/remnants-of-absence/Exhibition-Video-Essay.mp4" type="video/mp4">
+<video controls playsinline style="width: 100%; margin: 2rem 0 0.5rem; display: block;">
+  <source src="/videos/projects/remnants-of-absence/Video-Essay-SACEBA.mp4" type="video/mp4">
   Your browser does not support video playback. <a href="/videos/projects/remnants-of-absence/Exhibition-Video-Essay.mp4">Download the video</a>.
-</video> -->
+</video>
 <p style="font-size: 0.875rem; color: var(--color-gray-500); margin-top: 0; margin-bottom: 2rem;">Exhibition Video Essay</p>
 
 <img src="/images/projects/remnants-of-absence/Remnants_of_Absence_img-01.png" alt="Photography and Device Display at SACEBA" style="width: 100%; margin: 2rem 0 0.5rem; display: block;">
