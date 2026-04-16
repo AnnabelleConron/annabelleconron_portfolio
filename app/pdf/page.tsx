@@ -29,7 +29,7 @@ function injectVideoPrintPlaceholders(html: string): string {
   return html.replace(
     /<video[\s\S]*?<\/video>/gi,
     (match) =>
-      `<div class="video-wrapper">${match}<div class="video-print-placeholder">Video content — view the full portfolio at annabelleconron.github.io/annabelleconron_portfolio</div></div>`,
+      `<div class="video-wrapper">${match}<div class="video-print-placeholder"></div></div>`,
   );
 }
 
@@ -46,6 +46,9 @@ export default async function PdfPage() {
 
   return (
     <div className={styles.pdfRoot}>
+      {/* ── Print header / footer (hidden on screen, fixed on every printed page) ── */}
+      <div className={styles.printPageHeader}>Portfolio | Annabelle Conron</div>
+      <div className={styles.printPageFooter}>annabelleconron.github.io/annabelleconron_portfolio</div>
       {/* ── Cover / Table of Contents ───────────────────────────── */}
       <section className={styles.coverPage}>
         <div className={styles.coverMeta}>
