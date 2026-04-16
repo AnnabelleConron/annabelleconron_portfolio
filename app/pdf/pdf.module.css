@@ -1,0 +1,238 @@
+/* ─── Screen layout ──────────────────────────────────────────────────────── */
+
+.pdfRoot {
+  background: var(--color-white);
+  font-family: var(--font-sans);
+}
+
+/* Cover / TOC page */
+.coverPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.coverMeta {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.coverName {
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  color: var(--color-gray-900);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.coverSubtitle {
+  font-size: var(--text-xl);
+  color: var(--color-gray-400);
+  font-weight: 400;
+}
+
+.coverEmail {
+  font-size: var(--text-base);
+  color: var(--color-gray-400);
+  margin-top: var(--spacing-sm);
+}
+
+/* Table of contents */
+.toc h2 {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-400);
+  margin-bottom: var(--spacing-xl);
+}
+
+.toc ol {
+  list-style: none;
+  counter-reset: toc-counter;
+  padding: 0;
+}
+
+.toc li {
+  counter-increment: toc-counter;
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.toc li::before {
+  content: counter(toc-counter, decimal-leading-zero);
+  font-size: var(--text-sm);
+  color: var(--color-gray-300);
+  font-weight: 500;
+  flex-shrink: 0;
+  width: 2rem;
+}
+
+.tocTitle {
+  flex: 1;
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--color-gray-900);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-gray-300);
+}
+
+.tocTitle:hover {
+  text-decoration-color: var(--color-gray-900);
+}
+
+.tocSubject {
+  font-size: var(--text-sm);
+  color: var(--color-gray-400);
+  white-space: nowrap;
+}
+
+/* Print button */
+.printButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  margin-top: var(--spacing-3xl);
+  background: var(--color-gray-900);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: background 0.15s ease;
+}
+
+.printButton:hover {
+  background: var(--color-gray-700);
+}
+
+/* Project sections */
+.projectSection {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.projectHeader {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.projectLabel {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-400);
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+}
+
+.projectTitle {
+  font-size: var(--text-4xl);
+  font-weight: 600;
+  color: var(--color-gray-900);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+}
+
+.projectDescription {
+  font-size: var(--text-lg);
+  color: var(--color-gray-500);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.coverImageWrapper {
+  margin-bottom: var(--spacing-2xl);
+  background: var(--color-gray-50);
+}
+
+.coverImageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Inline gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-2xl);
+}
+
+.galleryImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--color-gray-50);
+}
+
+/* Video placeholder styles live in styles/markdown.css (global) */
+
+/* ─── Print overrides ─────────────────────────────────────────────────────── */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm 2cm;
+  }
+
+  /* Hide the print button */
+  .printButton {
+    display: none !important;
+  }
+
+  /* Reset backgrounds */
+  .pdfRoot {
+    background: white;
+  }
+
+  /* TOC page occupies exactly one page */
+  .coverPage {
+    break-after: page;
+    max-width: 100%;
+    padding: 0;
+    min-height: auto;
+    border-bottom: none;
+  }
+
+  /* Each project starts on a new page */
+  .projectSection {
+    break-before: page;
+    max-width: 100%;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  /* (img, h*, li, video rules live in pdf-global.css — element selectors not allowed in CSS Modules) */
+
+  /* Remove decorative borders in print */
+  .coverPage,
+  .projectSection {
+    border-bottom: none;
+  }
+
+  /* TOC link underlines look cleaner in print */
+  .tocTitle {
+    text-decoration: none;
+  }
+
+  /* Gallery single column in print for legibility */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

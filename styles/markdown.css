@@ -117,3 +117,33 @@
   border-top: 1px solid var(--color-gray-200);
   margin: var(--spacing-2xl) 0;
 }
+
+/* ─── PDF export: video placeholder ─────────────────────────────────────── */
+
+/* Screen: placeholder is invisible, video shows normally */
+.video-print-placeholder {
+  display: none;
+}
+
+@media print {
+  /* Hide video element */
+  .video-wrapper video {
+    display: none !important;
+  }
+
+  /* Show placeholder */
+  .video-print-placeholder {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding: 2rem;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-style: italic;
+    min-height: 100px;
+    text-align: center;
+  }
+}
