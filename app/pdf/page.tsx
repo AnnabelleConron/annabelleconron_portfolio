@@ -12,6 +12,7 @@ export const metadata = {
 const ORDERED_SLUGS = [
   'ubs-mobile',
   'remnants-of-absence',
+  'aura-of-lugano',
   'kinesis',
   'galactic-guide',
   'memory-match',
@@ -20,6 +21,7 @@ const ORDERED_SLUGS = [
 const TOC_ENTRIES = [
   { slug: 'ubs-mobile', title: 'UBS Mobile', subject: 'User Experience' },
   { slug: 'remnants-of-absence', title: 'Remnants of Absence', subject: 'Physical Computing' },
+  { slug: 'aura-of-lugano', title: 'An Aura of Words', subject: 'Data Visualisation' },
   { slug: 'kinesis', title: 'Kinesis', subject: 'Physical Computing' },
   { slug: 'galactic-guide', title: 'Galactic Guide', subject: 'Data Visualisation' },
   { slug: 'memory-match', title: 'Memory Match', subject: 'Programming Interactions' },
@@ -39,6 +41,8 @@ const VIDEO_THUMBNAILS: Record<string, string | string[]> = {
     '/images/projects/remnants-of-absence/Photogrammetry-LCD-Display-at-SACEBA.png',
   'Photogrammetry-Reconstruction-Result-of-Three-Scenes.mp4':
     '/images/projects/remnants-of-absence/Photogrammetry-Reconstruction-Result-of-Three-Scenes.png',
+  'walkthrough.mp4':
+    '/images/projects/aura-of-lugano/AuraofWords_Video.png',
 };
 
 function injectVideoThumbnails(html: string, bPath: string): string {
