@@ -4,7 +4,7 @@ description: "A scrollytelling interface that transforms citizen language — Go
 date: "2026-04-30"
 subject: "Data Visualisation"
 coverImage: "/images/projects/aura-of-lugano/cover.png"
-featured: false
+featured: true
 galleryImages:
   - "/images/projects/aura-of-lugano/02-method.png"
   - "/images/projects/aura-of-lugano/04-lenses-overview.png"

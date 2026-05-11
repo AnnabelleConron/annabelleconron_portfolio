@@ -4,7 +4,7 @@ description: "A video-based installation using environmental sensing and photogr
 date: "2025-06-01"
 subject: "Physical Computing"
 coverImage: "/images/projects/remnants-of-absence/cover.png"
-featured: true
+featured: false
 galleryImages:
 ---
 
